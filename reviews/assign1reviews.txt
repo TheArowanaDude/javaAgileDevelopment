@@ -1,0 +1,134 @@
+[Reviewed 09/19/19 05:25 AM PDT]
+synopsis:  let's refactor and move forward
+
+details: 
+
+Once we design a function do not remove it, instead create new functions.
+We designed generateSignalsForPosition. That should not be changed when creating generateSignalsForPositions. Instead generateSignalsForPositions should be using generateSignalsForPosition.
+
+Space after comma, please. Check through out the code.
+
+Make sure not to leave anything commented out.
+
+Please proceed to complete the assignment.                                             
+
+------------------------------------------------------------------------------
+[Reviewed 09/18/19 04:42 AM PDT]
+synopsis:  no need for state, field, matrix
+
+details:                                   
+
+Please see suggestions in code. I have made the changes and implemented the tests for generateSignal. Let's move forward from there.
+
+Next, we will design three functions now: generateSignalsForPositions, countSignals, and nextGeneration. Please see tests.txt.
+
+------------------------------------------------------------------------------
+[Reviewed 09/16/19 04:43 AM PDT]
+synopsis:  let's think of infinity
+
+details: 
+
+Please take a look at the design so far and ask how does it handle the case of an infinite universe.
+
+Since the universe is infinite, we can't take in the entire universe and deal with it. Thankfully life is sparse, relative to the size of the universe that is. We can leverage this fact in our design.
+
+Let's rethink about this.
+
+At the start of the game we are given which cells are alive. That will be sparse data, not infinite. We can drive off that information to determine which new cells are born and which existing cells die.
+
+For a cell to live, it needs either two or three live neighbors, based on the rules of the game. For us to decide if a cell lives or dies we need to know how many live neighbors it has. But, we can't take every cell and look for this data since we are dealing with infinite number of cells. Hum, what gives?
+
+At any time we know which cells are alive. What if each live cell sends out a signal in eight directions? For example, a cell at position (i, j) can send out a signal to (i - 1, j - 1), (i - 1, j), (i + 1, j), ...
+
+Then we can collate these signals, eventually to determine if a cell is alive or not.
+
+As a first step, let's implement a generate signal function:
+
+-given a live cell at position 3, 3, it generates eight signals for positions
+ (2, 2), (2, 3), (2, 4)...
+-given a live cell at positions 2, 4...
+-given a live cell at position 0, 0 (this is an infinite universe, we have to decide what happens at 0, 0)
+
+Let's implement a few tests for generateSignal which takes one position as input.
+
+If you like to make progress and get that reviewed quickly, please drop an email asking for review.
+
+------------------------------------------------------------------------------
+[Reviewed 09/15/19 05:05 AM PDT]
+synopsis:  let's take the next small step
+
+details: 
+
+Please use 2-space indentations.
+
+Please remove Feedback from code once it is addressed.
+
+Please see suggestions in code.
+
+Let's take the next small step. Design a bit more with tests. Let's see how it goes.
+
+------------------------------------------------------------------------------
+[Reviewed 09/14/19 03:55 AM PDT]
+synopsis:  let's make the code expressive
+
+details: 
+
+When a test is completed, please mark it with an x in tests.txt.
+
+Please proceed to complete the next series of tests suggested.
+
+After that, take a very small step and write a couple of more tests.
+
+------------------------------------------------------------------------------
+[Reviewed 09/11/19 04:16 AM MDT]
+synopsis:  we need to use the build file and proper directory structure
+
+details:                                                               
+
+Please address the following and drop Venkat an email to review again today.
+
+1. Edit test/game/GameOfLifeTest.java and src/game/GameOfLife.java.
+2. Delete from svn Cell.java, Grid.java, main.java
+3. Write the tests suggested in tests.txt into the file test/game/GameOfLifeTest.java.
+4. Write one test at a time and minimum code (only code needed for that test) to pass.
+5. Run the build, take a look at the coverage. (see previous review about how to see the coverage). If you see red, remove the code that has red and try again.
+6. If you get stuck in any of these steps, please drop an email to Venkat and ask for help.
+
+Once you have no red and the tests listed in tests.txt passing, please drop an email to Venkat and ask for another review so we can move forward today.
+
+------------------------------------------------------------------------------
+[Reviewed 09/09/19 04:20 AM MDT]
+synopsis:  good to see early start
+
+details:                          
+
+Good to see early start.
+
+A CI build has been setup for your project.
+You can see files related to this under assign1.
+
+How does this work?
+When you check in code, the CI build machine wakes up, fetches the latest version of your code, and runs the file build.bat that is under your repository (above assign1). That file in turn runs the build scripts in your assign1 directory.
+
+In case you missed it, please read:
+<https://groups.google.com/d/msg/uhcsf19sd/Vrbi-OCT3W4/o4qSr0dsAQAJ>.
+
+Also, please keep an eye on code coverage. To view the code coverage, please run the build using the following command (do not click or double click, instead open the command prompt, cd to your assign1 directory, and then run from there).
+
+gradlew
+Then take a look at the file (using a browser):
+build/reports/jacoco/test/html/index.html
+
+If the coverage shows red (less than 100%), please fix the coverage (by removing code) or ask for Venkat's help to fix it.
+
+Now to the code.
+                        
+Let's take small steps.
+
+Let's focus on a core behavior, logic, first before getting drawn into the details of the GUI, etc.
+
+Get rid of all the files .java files we have so far directly under the assign1 directory and let's move in a different direction.
+
+Please see tests.txt file for some test suggestions.
+
+------------------------------------------------------------------------------

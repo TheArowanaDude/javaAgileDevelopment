@@ -1,0 +1,22 @@
+[Reviewed 08/29/19 05:18 AM MDT]
+synopsis:  Please place the response in hw1.txt
+
+details:                                       
+
+Please place the response in hw1.txt file and remove all other files from hw1 directory.
+
+Part 1.
+
+In this part, write in short paragraphs, about why the author raises such a question, give context. Then, discuss the different approaches for design. Discuss how the author brings out the benefits of each and how each have their own flaws. 
+
+As you write in short paragraphs, provide examples to illustrate understanding and reflection on the ideas.
+
+Part 2.
+
+In this part discuss which of the design approaches the author promotes. Discuss why there are recommendations on how to approach the design. Then, again in short paragraphs, discuss each of the recommendations, their benefits, etc.
+
+Part 3.
+
+In this part, in short paragraphs, you may write in two sections. Mention the name of the person who is writing each section and then provide your individual observations and experiences.
+
+------------------------------------------------------------------------------

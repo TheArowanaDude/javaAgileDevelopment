@@ -1,0 +1,51 @@
+HW2 Due 11:59PM September 6
+
+In this homework we'll create an initial strategic design for a version of Game of Life.
+
+We'll not be writing any code in this homework, but only creating an initial design.
+
+Conway's Game of Life: <http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life>.
+
+Don't worry about being right or wrong here (there is no one right
+design or solution to this problem).
+
+Don't google for answers, it is more fun to arrive at your own solutions and
+see how your thought process evolves in discussions with your pair and the reviews.
+
+Please start with a short paragraph that reflects the understanding of what we are about to design, tell us about the game, the constraints, what we know about it.
+
+
+The game of life starts with a grid matrix, and the user initially chooses where to place the live cells. Certain rules apply to these cells: 
+A live cell with fewer than two live neighbours dies
+A live cell with two or three live neighbours lives on to the next generation/iteration.
+A live cell with more than three live neighbours dies.
+A dead cell with exactly three live neighbours becomes a live cell
+ 
+The game produces patterns that represent still lifes, oscillators, spaceships, and/or a combination of them. Since the game is undecidable, or that no algorithm exists which can determine when the game could stop, the game is also a corollary of the halting problem. Considering the possibility of someone solving this algorithm, the game is comparable to a Turing Machine.
+ 
+1. How would you design this program which is a GUI application?
+Draw a UML diagram for your design and refer to it from the text here.
+
+-- We will implement the previous review in a few hours, but as of now we have checked in
+our UML diagram.
+
+There are 4 classes: Cell class, grid, Game, and Neighbor.  
+
+There's a simple start button that makes the automaton run. Users choose
+the grid size and select coordinates for the initial live cells. The game will have a grid object that will contain a matrix of type cell. Each generation/iteration checks accordingly to the rules set by the game, by using the neighbor object in the cell class, which computes the neighbors that a cell has . The game keeps running until the user requests it to stop. 
+2. Discuss (not just mention) what programming language you would use.
+
+Java mainly because the java swing library is easy to use and is more familiar than GUI libraries of other programming languages. There is great IDE support for it, and Java is more portable, that is it doesn’t need to be recompiled for each system. 
+
+3. How do you plan to structure the program, what libraries would you use? Here we're looking for details about code directory structure, compilers, IDEs, tools, etc.---things that are at a higher level than the program and the programming language itself.
+
+
+We’ll be using the Java swing library (javax.swing) to create the GUI interface, and java.util for our matrices, arrays, EventListeners, and more. We will be using Intellij IDE & a text editor.  We’ll be following Java specifications on directory and file structure, with a file for each class, with a driver program file, so 5 files in total. We are using Java 8 as it is an industry standard and is used by a majority of Java developers (79%). We also want our program to be OS agnostic, that is it doesn’t make calls to specific OS functions. 
+
+
+Total[10]: 4
+
+Missing UML diagram.
+Lacking in details.
+Need compelling reasons for language choice.
+Build tools, testing tools?

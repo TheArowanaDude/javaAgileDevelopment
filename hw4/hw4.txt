@@ -1,0 +1,69 @@
+HW4 Due 11:59PM November 15
+
+***There will be no reviews for this Homework***
+
+Please write your answer in this file.
+
+1. What did you essentially learn in this course about design?
+                                
+Please provide individual responses to this question here (state your name and write in short paragraphs below that).
+
+Rayyan Memon
+I learned the Extreme Programming software development framework which has a set of principles
+and practices to be followed such as simplicity(YAGNI), Test Driven development, feedback loops,
+continuous integration, and refactoring.
+
+I learned Test Driven Development,where I should be focusing on creating test cases for a feature in advance as that can give instantaneous
+feedback on my program and it also helps to force my program be more modular and thus easier to maintain
+and grow in functionality.
+
+The 2nd biggest thing I learned from this course is the various principles I should abide by so that it's easier to extend and change the system
+in order to meet the dynamic needs of the user. The most impactful principle on my coding
+practices would be the DRY principle where you avoid having repeating code. It's a tempting
+practice to rewriting the (essentially) same code, and thus making subtle changes, and thus more
+points of fault within the system. I've found that DRY complements the TDD practice quite well,
+as well as coding principles such as OCP which seeks to promote the extensibility of functions
+and classes,thus reducing the need to repeat yourself.
+
+Another important thing I learned was the UML diagrams, that you should have a rough outline
+of the design of the program that should serve as a general guideline for programming the system
+but not necessarily the gospel. Only important aspects of the program should written out in the
+diagram and not the minute details.
+
+Finally, I learned the different patterns that shouldn't necessarily be a focus while programming,
+but rather should be eased into accordingly to the program and with design principles as the
+initial guiding forces.
+
+Farhaad Khan
+Before this course, I had no idea that design principles existed. I thought that a good design was one with less code and that looked
+visually appealing. Learning specific design principles such as the SOLID principles has made it possible for me to proactively look for ways to
+improve my code, instead of looking for a visually appealing program that could just produce results. Even more, design patterns have helped
+me make my code more stable and extensible. When I apply these principles in my future endeavours, I will know that my code will be easier
+to debug and understand.
+
+I used to draw out UML diagrams on a white board before starting my assignments. Before I knew about design patterns, I would
+try to create my own patterns to provide a solution. Now, I can use templates of patterns such as the Factory method.
+
+The most interesting thing I learned is Test Driven Development. I had no idea that TDD was used so often in the real world.
+TDD has allowed me to make my code as minimal as possible because I'm first working towards passing a specific test case,
+and then making it more general as I add more and more test cases.
+
+XP, continuous integration, and agile methodology have made my programming experience very smooth. XP has allowed me to work better
+with a team by releasing small, working increments of the program in a build that's set up with continuous integration.
+
+
+2. What are some of the general guidelines you would follow when designing?
+
+We would create a UML diagram to help us develop a good design, but be open to changes if we deem another design to be better.
+
+We want to make sure that we follow a tactical design along with a strategic design. Tactical design will make sure that we get the code running
+and working, but adding in a strategic design will ensure that we are following the SOLID principles. Evolutionary design will help us with this.
+Investing some time to follow these principles will make our code easier to read, more extensible, more stable, reduce clutter, etc.
+
+TDD can help us utilize these principles by focusing on minimal code and how it interacts with the rest of the program. We want to document our
+code well and make sure that we are getting 100% code coverage so that we are running all possible test cases while keeping our code minimal.
+
+Keeping these guidelines in mind might increase upfront costs but will keep the code more maintainable for change in the future.
+
+Total[10]: 10
+

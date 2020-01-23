@@ -1,0 +1,139 @@
+[Reviewed 10/24/19 06:41 AM MDT]
+synopsis:  let's reduce clutter
+
+details: 
+
+Please see Feedback from previous review in tests.txt.
+
+Please remove all commented out stuff.
+
+Please see suggestions in code.
+                                            
+assign3.txt:
+
+1.
+
+Please spellcheck.
+
+Please write in short paragraphs, one principle per paragraphs.
+
+More principles.
+
+------------------------------------------------------------------------------
+[Reviewed 10/23/19 05:35 AM MDT]
+synopsis: previous review not addressed, let's try this again  
+
+details:
+
+Please look for review notes (Feedback) from previous review in the code files  (and tests.txt if applicable). Once you address them, please drop an email asking for review.
+
+------------------------------------------------------------------------------
+[Reviewed 10/22/19 07:45 AM MDT]
+synopsis:  let's refactor a bit
+
+details: 
+
+Please see suggestions in code.
+
+Let's also focus on the questions in assign3.txt.
+
+------------------------------------------------------------------------------
+[Reviewed 10/21/19 09:18 AM MDT]
+synopsis:  let's refactor
+
+details:                 
+
+Please see suggestions in code.
+
+------------------------------------------------------------------------------
+[Reviewed 10/21/19 06:17 AM MDT]
+synopsis: previous review not addressed, let's try this again  
+
+details:
+
+Please look for review notes (Feedback) from previous review in the code files  (and tests.txt if applicable). Once you address them, please drop an email asking for review.
+
+------------------------------------------------------------------------------
+[Reviewed 10/20/19 06:52 AM MDT]
+synopsis: previous review not addressed, let's try this again  
+
+details:
+
+Please look for review notes (Feedback) from previous review in the code files  (and tests.txt if applicable). Once you address them, please drop an email asking for review.
+
+------------------------------------------------------------------------------
+[Reviewed 10/18/19 20:07 PM MDT]
+synopsis:  let's honor OCP
+
+details:                  
+
+Please see suggestions in code.
+
+------------------------------------------------------------------------------
+[Reviewed 10/18/19 08:02 AM EDT]
+synopsis: red in coverage, let's try this again
+
+details:
+Please make sure to run coverage and make sure there is no red in the coverage report. If there is red (or yellow) please fix it or ask for help to fix it. Once the coverage report shows 100%, all green, please drop an email to ask for review.
+
+------------------------------------------------------------------------------
+[Reviewed 10/17/19 09:22 AM EDT]
+synopsis:  good so far
+
+details: 
+
+Please see suggestions in code.                      
+
+------------------------------------------------------------------------------
+[Reviewed 10/16/19 03:41 AM EDT]
+synopsis:  good so far
+
+details:              
+
+Good so far. Please see suggestions in code.
+
+------------------------------------------------------------------------------
+[Reviewed 10/15/19 02:48 AM EDT]
+synopsis:  let's write one function instead of two for each criteria
+
+details:                                                            
+
+Please see suggestions in code.
+
+------------------------------------------------------------------------------
+[Reviewed 10/14/19 05:00 AM MDT]
+synopsis:  let's honor SRP and OCP
+
+details:                          
+
+Please see suggestions in code.
+
+------------------------------------------------------------------------------
+[Reviewed 10/13/19 05:46 AM MDT]
+synopsis:  let's make sure coverage report is generated properly
+
+details: 
+
+Missing tests.txt file.
+
+Run build, view the coverage report. It should show coverage. If you need help to fix that please let me know.
+
+Package names should be all lowercase, for example, backgroundcheck.
+
+Let's start with one of the verifications stated, like CreditCheck for example.
+
+- candidate has good credit
+- candidate has bad credit with reason "poor credit score"
+
+------------------------------------------------------------------------------
+[Reviewed 10/12/19 06:14 AM EDT]
+synopsis:  let's setup the build to check for different things
+
+details:                                                      
+
+Please use build.gradle.kts from assign2 to start on assign3.
+Currently the build is not performing the pmd check.
+
+Once that is done, please drop an email for the review to continue.
+
+------------------------------------------------------------------------------

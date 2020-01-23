@@ -1,0 +1,82 @@
+[Reviewed 11/06/19 18:31 PM CET]
+synopsis:  let's refactor
+
+details:                 
+
+Please see suggestions in code.
+
+Also, let's address questions in assign4.txt.
+
+------------------------------------------------------------------------------
+[Reviewed 11/05/19 18:36 PM CET]
+synopsis: red in coverage, let's try this again
+
+details:
+Please make sure to run coverage and make sure there is no red in the coverage report. If there is red (or yellow) please fix it or ask for help to fix it. Once the coverage report shows 100%, all green, please drop an email to ask for review.
+
+------------------------------------------------------------------------------
+[Reviewed 11/05/19 00:29 AM CET]
+synopsis:  let's keep it DRY
+
+details: 
+
+Please look for Feedback in all files.
+
+Please see suggestions in code.
+
+------------------------------------------------------------------------------
+[Reviewed 11/02/19 05:49 AM EDT]
+synopsis:  good so far
+
+details:              
+
+Good so far. Please see suggestions in code.
+
+------------------------------------------------------------------------------
+[Reviewed 10/31/19 04:53 AM MDT]
+synopsis:  let's change direction
+
+details: 
+
+Please see suggestions in code.
+
+------------------------------------------------------------------------------
+[Reviewed 10/30/19 07:03 AM MDT]
+synopsis:  let's refactor to reduce noise, also keep it DRY
+
+details:                                                
+
+Please see suggestions in code.
+
+------------------------------------------------------------------------------
+[Reviewed 10/28/19 14:04 PM MDT]
+synopsis:  let's keep it DRY
+
+details:                    
+
+Please see suggestions in code.
+
+------------------------------------------------------------------------------
+[Reviewed 10/28/19 05:42 AM MDT]
+synopsis: red in coverage, let's try this again
+
+details:
+Please make sure to run coverage and make sure there is no red in the coverage report. If there is red (or yellow) please fix it or ask for help to fix it. Once the coverage report shows 100%, all green, please drop an email to ask for review.
+
+------------------------------------------------------------------------------
+[Reviewed 10/27/19 19:21 PM CDT]
+synopsis:  please see tests.txt
+
+details:                       
+
+please see tests.txt.
+
+------------------------------------------------------------------------------
+[Reviewed 10/27/19 06:25 AM CDT]
+synopsis:  let's integrate into CI
+
+details: 
+
+Please see build.bat.
+
+------------------------------------------------------------------------------

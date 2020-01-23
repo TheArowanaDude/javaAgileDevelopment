@@ -1,0 +1,36 @@
+[Reviewed 10/09/19 22:00 PM CEST]
+synopsis:  you're done
+
+details:              
+
+Yay
+
+------------------------------------------------------------------------------
+[Reviewed 10/09/19 04:55 AM CEST]
+synopsis:  let's rework the no duplication paragraph
+
+details: 
+
+This idea states that there is a piece of code that represents an aspect of the system, and it is *only* this piece of code represents this system.
+to
+This idea states that there is a single piece of code to represents an aspect of the system.
+
+This paragraph on "no duplication" can use some significant rewriting, to make the writing smooth and up to the point. Avoid vague words (like seems tom, felt that) that lower authenticity of writing.
+
+------------------------------------------------------------------------------
+[Reviewed 10/07/19 05:07 AM MDT]
+synopsis:  very nice work so far
+
+details: 
+
+Excellent first paragraph.
+
+Good work in the second paragraph as well.
+
+"The third principle, "no duplication", focuses condensing code to the point that only the most useful code remains" - that's not what "no duplication" mean. Need to focus on DRY and SPOT here in this paragraph. Please rework.
+
+The example given in paragraph 4 is not related to "fewest elements." Please rework the example part.
+
+After that, in an additional paragraph discuss what to do if there is a conflict between applying two rules.
+
+------------------------------------------------------------------------------

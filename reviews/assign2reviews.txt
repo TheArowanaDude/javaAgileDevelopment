@@ -1,0 +1,198 @@
+[Reviewed 10/03/19 07:55 AM MDT]
+synopsis:  let's refactor and move forward
+
+details: 
+
+Please see suggestions in code.
+
+After completing the tests, write a program (main) that will read a lat and lon from arguments provided and display the flyover for that lat lon location.
+
+From the build file, call the program for three different lat lons.
+
+------------------------------------------------------------------------------
+[Reviewed 10/02/19 08:37 AM MDT]
+synopsis:  let's honor SRP and OCP
+
+details: 
+
+Please see suggestions in code.
+
+------------------------------------------------------------------------------
+[Reviewed 10/02/19 08:20 AM MDT]
+synopsis:  commented out stuff found
+
+details:                            
+
+Please remove all commented out stuff and then drop an email for review to continue.
+
+------------------------------------------------------------------------------
+[Reviewed 10/02/19 07:14 AM MDT]
+synopsis: red in coverage, let's try this again
+
+details:
+Please make sure to run coverage and make sure there is no red in the coverage report. If there is red (or yellow) please fix it or ask for help to fix it. Once the coverage report shows 100%, all green, please drop an email to ask for review.
+
+------------------------------------------------------------------------------
+[Reviewed 10/01/19 22:11 PM MDT]
+synopsis:  let's move forward
+
+details:                     
+
+Please see suggestions in code.
+
+We need to focus on an implementor of the ISSWebService.
+
+------------------------------------------------------------------------------
+[Reviewed 10/01/19 20:53 PM MDT]
+synopsis:  please implement the three tests pending in tests.txt
+
+details: 
+
+Please do not mark with x tests in tests.txt until the tests are actually implemented.
+
+You're heading in the right direction at this point. Please proceed to implement the three tests in tests.txt and we can then look at the next steps after that.
+
+------------------------------------------------------------------------------
+[Reviewed 10/01/19 05:55 AM MDT]
+synopsis:  let's change direction, to use Mockito
+
+details:                         
+
+It may help to view the Testing with Dependencies videos.
+
+Please see suggestions in code. After making these changes, please drop an email for a quick review to see if we're heading in the right direction.
+
+------------------------------------------------------------------------------
+[Reviewed 09/29/19 22:12 PM MDT]
+synopsis: let's move forward
+
+details:                    
+
+Please see suggestions in code.
+
+We have designed functions that return the time given the timestamp and
+lat/lon. Next step:
+
+Given lat/lon, the web service will return one of the following:
+1. timestamp when ISSS will fly over
+2. Error because the lat lon is not valid
+3. Network error.
+
+Let's not worry about the web service yet. Let's design a function, computeTimeOfFlyOver that takes two things:
+
+lat, long
+
+We will also create an interface ISSWebService with one method fetchIssFlyOverData
+
+In the tests, let's mock the fetchIssFlyOverData to return some canned timestamp. Using this mock let's test the computeTimeOfFlyOver.
+
+-computeTimeOfFlyOver passes lat and lon to fetchIssFlyOverData
+-computeTimeOfFlyOver returns time based on timestamp returned by fetchIssFlyOverData
+-computeTimeOfFlyOver gracefully reports error due to error from webservice
+-computeTimeOfFlyOver gracefully reports network failure
+
+------------------------------------------------------------------------------
+[Reviewed 09/29/19 19:36 PM CDT]
+synopsis: previous review not addressed, let's try this again  
+
+details:
+
+Please look for review notes (Feedback) from previous review in the code files  (and tests.txt if applicable). Once you address them, please drop an email asking for review.
+
+------------------------------------------------------------------------------
+[Reviewed 09/29/19 11:36 AM EEST]
+synopsis:  build not working
+
+details: 
+
+> ./gradlew
+
+BUILD SUCCESSFUL in 0s
+1 actionable task: 1 up-to-date
+> ls build
+ls: build: No such file or directory
+
+Please don't hesitate to ask for further help if you need.
+
+------------------------------------------------------------------------------
+[Reviewed 09/25/19 04:10 AM CEST]
+synopsis:  let's make the test a bit more clear
+
+details:                                       
+
+Please see suggestions in code.
+
+After that, please move forward.
+
+We now need a way to get time at lat lon. For that we need to know the timezone at a place of lat lon. We can use a library for that so the execution is local instead of going to the web.
+
+Please see <https://github.com/RomanIakovlev/timeshape>.
+
+Using this we can design a function called
+convertTimeStampToTimeAtLatLon() This function can take a timestamp, lat, and lon as input.
+
+------------------------------------------------------------------------------
+[Reviewed 09/24/19 22:22 PM CEST]
+synopsis: red in coverage, let's try this again
+
+details:
+Please make sure to run coverage and make sure there is no red in the coverage report. If there is red (or yellow) please fix it or ask for help to fix it. Once the coverage report shows 100%, all green, please drop an email to ask for review.
+
+------------------------------------------------------------------------------
+[Reviewed 09/23/19 18:32 PM CEST]
+synopsis:  let's get a few tests down
+
+details:                             
+
+Tests should give us confident the code is doing what its supposed to do.
+
+Please see tests.txt for test suggestions.
+
+Let's design a function named convertTimestampToUTCTime.
+It takes time stamp as input and returns UTC time as output.
+
+Please write minimum code only for those tests at this time.
+
+------------------------------------------------------------------------------
+[Reviewed 09/22/19 09:26 AM CEST]
+synopsis:  let's change direction
+
+details: 
+
+Let's start with some useful behavior. Things that are fuzzy (like where the input may come from or the data from the webservice) can be deferred to later.
+
+Let's take a quick look at the following URL in a browser:
+http://api.open-notify.org/iss-pass.json?lat=29.721670&lon=-95.343631&n=1
+
+Ah, it's returning risetime which is the number of seconds since January 1, 1970 12:00 AM.
+
+We can worry about getting the timestamp later. First, given a time stamp, let's find the current time in the timezone of a given lat and lon.
+
+Let's first come up with a few tests to verify that such a method, get time for lat and lon is producing the correct result. Then implement the method.
+
+------------------------------------------------------------------------------
+[Reviewed 09/22/19 08:54 AM CEST]
+synopsis:  let's get the build working
+
+details: 
+
+Please take a look at the assign1 directory. Compare that to assign2 directory. Do we have everything to run the build?
+
+In assign2, run
+
+./gradlew (without ./ on Windows)
+Then take a look at the coverage report to make sure it shows coverage.
+
+Please don't hesitate to ask for help if you need.
+
+------------------------------------------------------------------------------
+[Reviewed 09/21/19 13:34 PM CEST]
+synopsis:  let's integrate CI
+
+details:                     
+
+No CI yet.
+
+The CI server is not building assign2 yet. Please fix build.bat to point to assign2 directory build. If you need help with that please ask.
+
+------------------------------------------------------------------------------

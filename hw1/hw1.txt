@@ -1,0 +1,39 @@
+==============================================================================
+HW1: Due 11:59PM August 30
+
+1. Is design dead according to Martin Fowler in
+<http://martinfowler.com/articles/designDead.html>?
+
+The author, Martin Fowler, raises notices that nowadays, design is apprehended as “Big Up Front Design”, and that design techniques such as UML, flexible frameworks, and patterns are either downright ignored or de-emphasized. Fowler points out the controversy of XP: opponents compare it to “code and fix”, or hacking, and proponents see it as a rejection of design techniques. With Fowler is forced to ask the question: Is Design Dead? 
+
+He immediately describes the philosophy with the evolutionary design, which is the natural growth of the system with components being implemented as needed. He describes the issue of this strategy, which is in general practice, it turns into a “code and fix” routine, with decisions being done on the fly with very little to no forethought on the design of the system, and it quickly turns into a spaghetti of code as features are being implemented. As the number of features in the system grow, the cost of change grows exponentially. 
+
+
+
+He then brings up a design strategy that goes to the opposite extreme to address the flaws of evolutionary design with a strategy called planned design. He brings up the example of building a skyscraper: where it’s absolutely necessary to have a design planned out completely in advance, and brings up the view of this strategy which is that in order to write a complex program for a project, you need to have a complete blueprint at hand before implementing anything in code. Planned design consists of two teams: the designers create an abstract diagram, and the programmers code based off the provided design. In theory, this could minimize software entropy because the designers would be able to connect the different parts of the program in a more efficient manner, thus reducing the cost of change. Although this seems to be an ideal solution, no blueprint is flawless. A fault of planned design is that once a design is created, it becomes difficult to alter and evolve the system when new features are needed.
+
+2. What are some of the main observations he makes about how we should design?
+
+The author, Martin Fowler, discusses a software design approach known as Extreme Programming, or XP design, that addresses issues with predecessor software designs. XP is a hybrid of Planned Design and Evolutionary Design with a heavier emphasis on the latter. The principles of this design approach include a non-detailed sketch of the program with the purpose that it gives a direction of how the program should be written out. Another principle of XP is simplicity of code so that it’s readable and easy to maintain, and only features that are needed at that moment should be implemented  (YAGNI) there shouldn’t be any attempt to implement flexibility in the structure of code until it’s absolutely necessary to do so.
+
+Along with those main principles, XP consists of the core practices of Testing, Continuous Integration, and refactoring. Thorough testing ensures that the program is working safely, and Continuous Integration ensures that the entire team is working efficiently on the present code. The enabling of these two practices flattens the ‘change curve’, or the understanding that a change in analysis further down the line will exponentially rise, and thus makes Evolutionary Design work. As for refactoring, the author says that it’s so effective that he was motivated to “write a whole book about it.”
+
+
+
+3. Relate these recommendations to your personal experiences, where it may
+have worked or may not have worked for you.
+
+I found that when it comes to coding and designing a solution, I think in a similar fashion to Martin Fowler’s. When starting my design, I create a high level view of classes and their relationships, and that’s what I start coding off of, but remain courageous enough to amend my original design if need be. I find that a high level diagram makes it easier to write out code for more complicated projects. I completely agree that the will to design has a direct relationship with the design quality. Without a strong will, every piece of code becomes ad-hoc. -- Farhaad Khan
+
+Personally, I never bothered to really sit down and actually plan out my code design. I would always jump to it, and always implement features on the go that were needed, so similar to evolutionary design, where over time, the cost of change would increase. Features that should have been easy to implement were unnecessarily difficult, time consuming, and incredibly frustrating as new issues would constantly pop up. I would imagine that practicing a diagram just detailed enough to give basic guidance to my code would theoretically address a lot of these issues I have. I feel I have already have taken advantage of some XP principles like YAGNI but I don't see its fruition in my workflow because of no design forethought, code maintenance, and refactoring. -- Rayyan Memon
+
+
+
+
+Total [10}: 8 
+
+1.
+"raises notices that nowadays, " - need to rephrase.
+
+2.
+Need a lot more in this part. Need to slow down and cover in more details the things addressed. Also, need to cover other things mentioned in the article for this part.
